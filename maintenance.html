@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>SHOWROOM LG BOUSAADA</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/Maintenance.CSS" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              LG
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">shop </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="service.html"> Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- service section -->
+  <div class="container">
+    <!-- Title section -->
+    <div class="title"> Maintenance and Reform</div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="/request_repair" method="post">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details" >First name</span>
+            <input type="text" name="first_name" placeholder="Enter your first name" required
+                oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+          </div>
+          <!-- Input for Username -->
+          <div class="input-box">
+            <span class="details" >Last name</span>
+            <input type="text" name="last_name" placeholder="Enter your Last name" required
+              oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+          </div>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">address</span>
+            <input type="text" name="address" placeholder="1234 Main St, City, Country" required
+            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+          </diV>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details" >Phone Number</span>
+            <input type="tel" pattern="\d{10}" name="phone_num" maxlength="10" inputmode="numeric" placeholder="Enter your Phone Number" required
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+          </div>
+          
+          
+          <div class="input-box">
+            <span class="detail" >Device name</span>
+            <input type="text" name="device_name" placeholder="Enter your address" required
+            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+          </div>
+          <div class="input-box">
+            <span class="details" >Serial number</span>
+            <input type="text" name="serial_num" placeholder="Enter Serial number" maxlength="14" required
+              oninput="this.value = this.value.replace(/\D/g, '').slice(0,14)">
+          </div>
+          <span class="details" id="device_img">Device image</span>
+          <div class="upload-container">
+            <input type="file" name="upload-photo" accept="image/*">
+            <label for="upload-photo" class="upload-label">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="upload-icon">
+                    <path fill-rule="evenodd" d="M12 16.5a.75.75 0 01-.75-.75V7.5a.75.75 0 011.5 0v8.25a.75.75 0 01-.75.75zM12 3a.75.75 0 01.75.75v8.25H15a.75.75 0 010 1.5h-3.75V21a.75.75 0 01-1.5 0v-8.25H9a.75.75 0 010-1.5h3.75V3.75A.75.75 0 0112 3z" clip-rule="evenodd" />
+                </svg>
+                <span>Upload Photo</span>
+            </label>
+            <div id="file-name">No file chosen</div>
+        </div>
+          <div class="input-box1">
+            <span class="details">Device condition description</span>
+            <input type="comment" placeholder="Enter your password" required
+            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+          <input type="submit" value="SEND">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    const uploadInput = document.getElementById('upload-photo');
+    const fileNameDisplay = document.getElementById('file-name');
+    const uploadLabel = document.querySelector('.upload-label');
+
+    uploadInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            fileNameDisplay.textContent = this.files[0].name;
+            uploadLabel.classList.add('has-file');
+        } else {
+            fileNameDisplay.textContent = 'No file chosen';
+            uploadLabel.classList.remove('has-file');
+        }
+    });
+    document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault(); // منع الإرسال التلقائي مؤقتًا
+
+  const inputs = this.querySelectorAll("input[required]");
+  let allValid = true;
+
+  inputs.forEach(input => {
+    if (!input.value.trim()) {
+      allValid = false;
+      input.style.border = "2px solid red";
+    } else {
+      input.style.border = "1px solid #ccc";
+    }
+  });
+
+  if (!allValid) {
+    alert("Please fill out all required fields.");
+  } else {
+    alert("تم طلب الصيانة✔️");
+
+    // تفريغ كل الحقول
+    this.reset();
+
+    // إعادة تعيين عرض اسم الملف
+    fileNameDisplay.textContent = 'No file chosen';
+    uploadLabel.classList.remove('has-file');
+  }
+});
+
+</script>
+
+
+</body>
+</html>
